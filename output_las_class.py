@@ -52,7 +52,7 @@ def output_las():
     with open ('scratchpipeline.json', 'w') as outfile:
         json.dump(myDictObj, outfile)
     os.system("pdal pipeline scratchpipeline.json")
-    #cleanup()
+    cleanup()
 
 def cleanup():
     files = os.listdir()
